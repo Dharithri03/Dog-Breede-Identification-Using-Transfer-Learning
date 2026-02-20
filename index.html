@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dog Breed Classifier - Introduction</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <nav style="margin-bottom: 20px;">
+            <a href="/" class="btn btn-secondary" style="width: auto; padding: 10px 20px; text-decoration: none;">Back
+                to Identification Tool</a>
+        </nav>
+
+        <section class="info-section">
+            <div class="overview-card">
+                <h2>Identify Dog Breed Project</h2>
+                <p><strong>Dog Breed Identification using Transfer Learning</strong> aims to develop a robust machine
+                    learning model for accurately classifying dog breeds from images. The project leverages transfer
+                    learning, utilizing pre-trained deep learning models like MobileNetV2 as feature extractors.</p>
+                <div class="meta-info">
+                    <div class="meta-item"><strong>Category:</strong> Artificial Intelligence</div>
+                    <div class="meta-item">
+                        <strong>Skills:</strong>
+                        <div class="skill-badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">EDA</span>
+                            <span class="badge">Preprocessing</span>
+                            <span class="badge">Web App</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Application Scenarios</h2>
+            <div class="scenarios-container">
+                <div class="scenario-card">
+                    <h3><span>🏠</span> Pet Adoption Platform</h3>
+                    <p>Automatically categorizing dog breeds for animals available for adoption to improve user
+                        experience.</p>
+                </div>
+                <div class="scenario-card">
+                    <h3><span>📢</span> Lost Dog Identification</h3>
+                    <p>Helping reunite lost dogs with their owners by providing accurate breed descriptions.</p>
+                </div>
+                <div class="scenario-card">
+                    <h3><span>🩺</span> Veterinary Diagnosis Support</h3>
+                    <p>Assisting veterinarians in identifying mixed breeds to understand genetic predispositions.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Technical Architecture</h2>
+            <div class="architecture-flow">
+                <div class="arch-step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Data Preprocessing</h4>
+                        <p>Resizing to 224x224 and normalization.</p>
+                    </div>
+                </div>
+                <div class="arch-step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>MobileNetV2 Inference</h4>
+                        <p>Using pre-trained CNN for feature extraction.</p>
+                    </div>
+                </div>
+                <div class="arch-step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Output Rendering</h4>
+                        <p>Displaying breed name and confidence level.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Project Journey</h2>
+            <div class="milestones-grid">
+                <div class="milestone-card">
+                    <h4>Milestone 1: Data Collection</h4>
+                    <p>Collected images of 20 dog breeds from Kaggle dataset.</p>
+                </div>
+                <div class="milestone-card">
+                    <h4>Milestone 2: Image Processing</h4>
+                    <p>Implementing transformations like rotation, scaling, and translation.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

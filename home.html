@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dog Breed Classifier - Home</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <nav style="margin-bottom: 20px;">
+            <a href="/intro" class="btn btn-secondary"
+                style="width: auto; padding: 10px 20px; text-decoration: none;">Identify Dog Breed Info</a>
+            <a href="/info" class="btn btn-secondary"
+                style="width: auto; padding: 10px 20px; text-decoration: none;">Upload Information</a>
+        </nav>
+
+        <div class="container">
+            <h1>🐶 Identify Dog Breed</h1>
+            <p class="subtitle">Upload a photo to discover the breed instantly.</p>
+
+            <form action="/predict" method="post" enctype="multipart/form-data" id="upload-form">
+                <input type="file" name="file" id="file-input" accept="image/*" class="hidden">
+
+                <div class="upload-area" id="drop-zone">
+                    <div id="upload-content">
+                        <div class="upload-icon">☁️</div>
+                        <div class="upload-text">Click or Drag & Drop</div>
+                        <div class="upload-hint">JPEG, PNG up to 5MB</div>
+                    </div>
+                    <img id="image-preview" src="#" alt="Preview"
+                        style="display:none; max-width:100%; border-radius:8px;">
+                </div>
+
+                <button type="submit" class="btn" id="submit-btn">
+                    Identify Dog Breed
+                </button>
+            </form>
+
+            <footer>
+                Powered by MobileNetV2
+            </footer>
+        </div>
+
+        <section class="features-section" id="identify-section">
+            <div class="feature-card">
+                <span class="feature-icon">🔍</span>
+                <h3>Identify Dog Breed</h3>
+                <p>Our advanced AI analyzes unique patterns, shapes, and features to identify hundreds of dog breeds
+                    with high precision.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <h3>Instant Results</h3>
+                <p>Get identification results in seconds. Powered by MobileNetV2, our model is optimized for speed and
+                    accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📱</span>
+                <h3>Mobile Friendly</h3>
+                <p>Upload photos directly from your smartphone camera or gallery for on-the-go identification.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+
+</html>

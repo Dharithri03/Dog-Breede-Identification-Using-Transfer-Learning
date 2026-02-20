@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="container">
+            {% if error %}
+            <div class="error-card">
+                <h2 style="color:#ef4444">Oops!</h2>
+                <p>{{ error }}</p>
+                <a href="/" class="btn btn-secondary">Try Again</a>
+            </div>
+            {% else %}
+            <h1>Analysis Complete</h1>
+
+            <img src="/{{ image_url }}" alt="Uploaded Image"
+                style="width:100%; border-radius:8px; margin-bottom:20px; max-height:300px; object-fit:cover; box-shadow:var(--shadow-md);">
+
+            <div class="result-card">
+                <p
+                    style="text-transform:uppercase; font-size:0.8rem; letter-spacing:1px; color:var(--text-muted); margin:0;">
+                    Identified Breed</p>
+                <div class="breed-title">{{ breed }}</div>
+
+                <div style="background:#e0e7ff; height:8px; border-radius:4px; margin:10px 0; overflow:hidden;">
+                    <div style="background:var(--primary-color); height:100%; width:{{ confidence * 100 }}%"></div>
+                </div>
+                <p style="font-weight:600; text-align:right; margin:0; color:var(--primary-color);">{{
+                    '%.1f'|format(confidence*100) }}% Confidence</p>
+            </div>
+
+            <a href="/" class="btn btn-secondary"
+                style="display:inline-block; text-decoration:none; box-sizing:border-box;">Analyze Another</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>
