@@ -46,16 +46,27 @@ Note: More breeds can be added by retraining the model.
 5. System displays predicted breed
 
 📂 Project Structure
+
 Dog-Breed-Identification/
+
 ├── app.py
+
 ├── train_model.py
+
 ├── database.db
+
 ├── models/
+
 ├── static/uploads/
+
 ├── templates/
+
 ├── notebooks/
+
 ├── requirements.txt
+
 ├── .gitignore
+
 ├── README.md
 
 ▶️ How to Run
@@ -81,4 +92,5 @@ Demo Link: https://drive.google.com/file/d/1zmtP-gMoP59yaZZNCyndsJOaZmKvF0oo/vie
 
 🧩 Conclusion
 This project demonstrates the use of transfer learning for real-world image classification tasks.
+
 
